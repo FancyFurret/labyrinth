@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MinotaurAttack : MonoBehaviour {
 
+	public int attack = 35;
+
 	GameObject player;
 
 	void Awake ()
@@ -13,7 +15,7 @@ public class MinotaurAttack : MonoBehaviour {
 	void OnTriggerEnter (Collider other)
 	{
 		if (other.gameObject == player) {
-			Application.LoadLevel (Application.loadedLevel);
+			player.GetComponent<PlayerHealth>().TakeDamage(attack);
 				}
 	}
 }
