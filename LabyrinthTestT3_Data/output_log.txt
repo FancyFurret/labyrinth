@@ -1,0 +1,43 @@
+Initialize engine version: 4.6.0f3 (30840d631a27)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics (ID=0x152)
+    Vendor:   Intel
+    VRAM:     64 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  1.955 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found.
+<RI> Input initialized.
+Platform assembly: M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\System.dll (this message is harmless)
+WARNING: Shader Unsupported: 'Reflective/VertexLit' - Pass '' shader state not supported
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 4.971843 ms
+Default clip could not be found in attached animations list.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/Animation/Animation.cpp Line: 395)
+
+System memory in use before: 40.3 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 37.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 3750.
+Total: 169.641479 ms (FindLiveObjects: 0.221298 ms CreateObjectMapping: 0.032072 ms MarkObjects: 0.448370 ms  DeleteObjects: 0.662292 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+Platform assembly: M:\Unity\Labyrinth\LabyrinthTestT3_Data\Managed\Boo.Lang.dll (this message is harmless)
