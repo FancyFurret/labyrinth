@@ -189,8 +189,8 @@
  ////////////////////////////////////
  ////////////////////////////////////
  
- public var isPause = false;
- var x = 0;
+ //public var isPause = false;
+ //var x = 0;
  
  private function UpdateFunction () {
  	
@@ -200,17 +200,17 @@
 						//		Time.timeScale = 1;
 						//}
 						
-						if (Input.GetKeyDown (KeyCode.Escape)) {
-						isPause = !isPause;
-						if (isPause) {
-								Time.timeScale = 0;
-								x = 1;
-								print ("worked");
-						} else {
-								Time.timeScale = 1;
-								x = 0;
-						}
-				}
+				//		if (Input.GetKeyDown (KeyCode.Escape)) {
+				//		isPause = !isPause;
+				//		if (isPause) {
+				//				Time.timeScale = 0;
+				//				x = 1;
+				//				print ("worked");
+				//		} else {
+				//				Time.timeScale = 1;
+				//				x = 0;
+				//		}
+				//}
 						
 						
      // We copy the actual velocity into a temporary variable that we can manipulate.
@@ -342,21 +342,21 @@
  
  //////////////////////////
  
-  function OnGUI()
- {
+ // function OnGUI()
+ //{
  //   if(isPause)
  //       GUI.Window(0, MainMenu, TheMainMenu, "Pause Menu");
- 		if(isPause == true || x == 1)
- 		{
- 				if (Input.GetKeyDown (KeyCode.Escape)) {
-						isPause = !isPause;
-						Time.timeScale = 1;
-						x = 0;
-						}
-				}
+ //		if(isPause == true || x == 1)
+ //		{
+ //				if (Input.GetKeyDown (KeyCode.Escape)) {
+//						isPause = !isPause;
+//						Time.timeScale = 1;
+//						x = 0;
+//						}
+//				}
  		
  			
- }
+ //}
  
  //function TheMainMenu () {
  //if(GUILayout.Button("Main Menu")){
