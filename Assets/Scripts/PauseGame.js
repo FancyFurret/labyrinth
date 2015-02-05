@@ -44,6 +44,7 @@ function OnGUI()
 	{
         GUI.color = buttonOutlineAndTextColor;
         Screen.showCursor = true;
+        Screen.lockCursor = false;
         
 		switch (currentPage) 
 		{
@@ -54,7 +55,7 @@ function OnGUI()
         
         if (currentPage == Page.Main)
         {
-        GUI.Window(0, MainMenu, PauseMenu, "Paused");
+        	GUI.Window(0, MainMenu, PauseMenu, "Paused");
         }
     }
     
@@ -80,8 +81,7 @@ function PauseMenu()
 	//BeginPage(400, 200);
 	if (GUILayout.Button("Quit to Main Menu"))
 		{
-		//Debug.Log ("It is working");
-		Application.LoadLevel("MainMenu");
+			Application.LoadLevel("MainMenu");
 		}
 	
     //EndPage();
@@ -110,7 +110,7 @@ function UnPauseGame()
 {
     Time.timeScale = 1;
     AudioListener.pause = false;
-    Screen.showCursor = false;
+    
 	firstPersonControllerCamera.enabled = true;
 	mainCamera.enabled = true;
 	

@@ -52,6 +52,8 @@ public class MouseLook : MonoBehaviour {
 
 	void Update ()
 	{
+		Screen.showCursor = false;
+		Screen.lockCursor = true;
 
 	//	if( Input.GetKeyDown(KeyCode.Escape))
     //{

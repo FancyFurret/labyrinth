@@ -3,14 +3,14 @@ private var motor : CharacterMotor;
 // Use this for initialization
 function Awake () {
 	motor = GetComponent(CharacterMotor);
-	Screen.lockCursor = true;
+	//Screen.lockCursor = true;
 }
 
 // Update is called once per frame
 function Update () {
-	Screen.lockCursor = true;
-	Screen.lockCursor = false;
-	Screen.showCursor = false;
+	//Screen.lockCursor = true;
+	//Screen.lockCursor = false;
+	//Screen.showCursor = false;
 
 	// Get the input vector from keyboard or analog stick
 	var directionVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
