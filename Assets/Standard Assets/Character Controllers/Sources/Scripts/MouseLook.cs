@@ -32,39 +32,39 @@ public class MouseLook : MonoBehaviour {
 
 	///////////////////////////
 
-	public bool isPause = false;
-	public int paused = 1;
-	public GUISkin guiSkin;
-	public Rect MainMenu = new Rect(Screen.width/2,Screen.height/2,150,200);
+	//public bool isPause = false;
+	//public int paused = 1;
+	//public GUISkin guiSkin;
+	//public Rect MainMenu = new Rect(Screen.width/2,Screen.height/2,150,200);
 
-	private void UpdateFunction () {
+	//private void UpdateFunction () {
 		
-				if (Input.GetKeyDown (KeyCode.Escape)) {
-						isPause = !isPause;
-						if (isPause) {
-								Time.timeScale = 0;
-						} else {
-								Time.timeScale = 1;
-						}
-				}
-		}
+	//			if (Input.GetKeyDown (KeyCode.Escape)) {
+	//					isPause = !isPause;
+	//					if (isPause) {
+	//							Time.timeScale = 0;
+	//					} else {
+	//							Time.timeScale = 1;
+	//					}
+	//			}
+	//	}
 
 
 	void Update ()
 	{
 
-		if( Input.GetKeyDown(KeyCode.Escape))
-    {
-       isPause = !isPause;
-       if(isPause){
-				paused = 0;
-          }
-       else {
-				paused = 1;
-          }
-    } 
+	//	if( Input.GetKeyDown(KeyCode.Escape))
+    //{
+     //  isPause = !isPause;
+       //if(isPause){
+		//		paused = 0;
+         // }
+       //else {
+		//		paused = 1;
+          //}
+    //} 
 
-		if (paused == 1) {
+		//if (paused == 1) {
 
 			////////////////////////////////////////////////////
 
@@ -83,7 +83,7 @@ public class MouseLook : MonoBehaviour {
 			
 								transform.localEulerAngles = new Vector3 (-rotationY, transform.localEulerAngles.y, 0);
 						}
-				}
+				//}
 	}
 	///
 	void OnGUI()
@@ -95,25 +95,25 @@ public class MouseLook : MonoBehaviour {
 		//else{
 		//}
 
-		if (isPause) {
-						MainMenu = GUI.Window (0, MainMenu, TheMainMenu, "Pause Menu");
-						Screen.showCursor = true;
-				} 
-		else {
-			  Screen.showCursor = false;
+	//	if (isPause) {
+	//					MainMenu = GUI.Window (0, MainMenu, TheMainMenu, "Pause Menu");
+	//					Screen.showCursor = true;
+	//			} 
+	//	else {
+	//		  Screen.showCursor = false;
 			  GUI.Label(new Rect(Screen.width/2,Screen.height/2.1f, Screen.width/2, Screen.height/2), "X");
-			 }
+	//		 }
 	}
 
 	///
-	void TheMainMenu (int windowID) {
-		if(GUILayout.Button("Main Menu")){
-			Application.LoadLevel("MainMenu");
-		}
-		if(GUILayout.Button("Quit")){
-			Application.Quit();
-		}
-	}
+	//void TheMainMenu (int windowID) {
+	//	if(GUILayout.Button("Main Menu")){
+	//		Application.LoadLevel("MainMenu");
+	//	}
+	//	if(GUILayout.Button("Quit")){
+	//		Application.Quit();
+	//	}
+	//}
 
 	void Start ()
 	{
