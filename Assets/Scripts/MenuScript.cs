@@ -4,7 +4,7 @@ using System.Collections;
 public class AndroidMenuScript : MonoBehaviour {
 
 	public void OnClickPlay(){
-		Application.LoadLevel("LabyrinthScene1");
+		Application.LoadLevel("LabyrinthScene1 (2)");
 	}
 
 	public void OnClickExit(){

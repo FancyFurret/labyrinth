@@ -19,6 +19,8 @@ public class GameOverController : MonoBehaviour {
 		if (gameOver) {
 						if (Input.GetMouseButtonDown (0))
 								Application.LoadLevel ("MainMenu");
+								Screen.showCursor = true;
+								Screen.lockCursor = false;
 				}
 	}
 

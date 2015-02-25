@@ -30,96 +30,36 @@ public class MouseLook : MonoBehaviour {
 
 	float rotationY = 0F;
 
-	///////////////////////////
-
-	//public bool isPause = false;
-	//public int paused = 1;
-	//public GUISkin guiSkin;
-	//public Rect MainMenu = new Rect(Screen.width/2,Screen.height/2,150,200);
-
-	//private void UpdateFunction () {
-		
-	//			if (Input.GetKeyDown (KeyCode.Escape)) {
-	//					isPause = !isPause;
-	//					if (isPause) {
-	//							Time.timeScale = 0;
-	//					} else {
-	//							Time.timeScale = 1;
-	//					}
-	//			}
-	//	}
-
-
 	void Update ()
 	{
 		Screen.showCursor = false;
 		Screen.lockCursor = true;
 
-	//	if( Input.GetKeyDown(KeyCode.Escape))
-    //{
-     //  isPause = !isPause;
-       //if(isPause){
-		//		paused = 0;
-         // }
-       //else {
-		//		paused = 1;
-          //}
-    //} 
-
-		//if (paused == 1) {
-
-			////////////////////////////////////////////////////
-
-						if (axes == RotationAxes.MouseXAndY) {
-								float rotationX = transform.localEulerAngles.y + Input.GetAxis ("Mouse X") * sensitivityX;
+					if (axes == RotationAxes.MouseXAndY) {
+							float rotationX = transform.localEulerAngles.y + Input.GetAxis ("Mouse X") * sensitivityX;
 			
-								rotationY += Input.GetAxis ("Mouse Y") * sensitivityY;
-								rotationY = Mathf.Clamp (rotationY, minimumY, maximumY);
+							rotationY += Input.GetAxis ("Mouse Y") * sensitivityY;
+							rotationY = Mathf.Clamp (rotationY, minimumY, maximumY);
 			
-								transform.localEulerAngles = new Vector3 (-rotationY, rotationX, 0);
-						} else if (axes == RotationAxes.MouseX) {
-								transform.Rotate (0, Input.GetAxis ("Mouse X") * sensitivityX, 0);
-						} else {
-								rotationY += Input.GetAxis ("Mouse Y") * sensitivityY;
-								rotationY = Mathf.Clamp (rotationY, minimumY, maximumY);
+							transform.localEulerAngles = new Vector3 (-rotationY, rotationX, 0);
+					} else if (axes == RotationAxes.MouseX) {
+							transform.Rotate (0, Input.GetAxis ("Mouse X") * sensitivityX, 0);
+					} else {
+							rotationY += Input.GetAxis ("Mouse Y") * sensitivityY;
+							rotationY = Mathf.Clamp (rotationY, minimumY, maximumY);
 			
-								transform.localEulerAngles = new Vector3 (-rotationY, transform.localEulerAngles.y, 0);
-						}
-				//}
+							transform.localEulerAngles = new Vector3 (-rotationY, transform.localEulerAngles.y, 0);
+					}
+				
 	}
-	///
+
 	void OnGUI()
 	{
-		//if (paused == 1)
-		//{
-			
-		//}
-		//else{
-		//}
-
-	//	if (isPause) {
-	//					MainMenu = GUI.Window (0, MainMenu, TheMainMenu, "Pause Menu");
-	//					Screen.showCursor = true;
-	//			} 
-	//	else {
-	//		  Screen.showCursor = false;
 			  GUI.Label(new Rect(Screen.width/2,Screen.height/2.1f, Screen.width/2, Screen.height/2), "X");
-	//		 }
 	}
-
-	///
-	//void TheMainMenu (int windowID) {
-	//	if(GUILayout.Button("Main Menu")){
-	//		Application.LoadLevel("MainMenu");
-	//	}
-	//	if(GUILayout.Button("Quit")){
-	//		Application.Quit();
-	//	}
-	//}
 
 	void Start ()
 	{
-		// Make the rigid body not change rotation
 		if (GetComponent<Rigidbody>())
 			GetComponent<Rigidbody>().freezeRotation = true;
 	}
